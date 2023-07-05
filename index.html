@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Login Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<style>
+.user{
+font-family: sans-serif;
+}
+.name{
+border-color: red;
+padding: 6px;
+text-align: center;
+}
+.button{
+cursor: pointer;
+width: 200px;
+height: 40px;
+font-weight: bold;
+}
+.link{
+font-size: 30px;
+font-family: sans-serif;
+}
+@media (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+}
+@media (max-width: 576px) {
+  /* Styles for screens smaller than 576px */
+</style> 
+<script>
+function startThank() {
+let username = document.getElementById('user').value
+
+if(username == "idiot"){
+alert('You cant use Bad Words')
+false;
+}else if(username == ""){
+alert('You Didnt Even Type the Username')
+}else{
+true;
+}
+
+let password = document.getElementById('pass').value
+
+if(username == "idiot"){
+alert('You cant use Bad Words')
+false;
+}else if(username == ""){
+alert('You Didnt Even Type the Password')
+}else{
+alert('Hello ' + username)
+true;
+}
+}
+</script>
+<form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<h1 class="user">Username</h1><input type="text" placeholder="Type Username" id="user" class="name">
+</center>
+<br>
+<br>
+<center>
+<h1 class="user">Password</h1><input type="password" placeholder="Type Password" id="pass" class="name">
+</center>
+<br>
+<br>
+<center>
+<input type="button" class="button" value="Submit" onClick="startThank()">
+</center>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<a href="redeem.html" class="link">If you Have Redeem Code Click Here</a>
+</center>
+</body>
+</html>
